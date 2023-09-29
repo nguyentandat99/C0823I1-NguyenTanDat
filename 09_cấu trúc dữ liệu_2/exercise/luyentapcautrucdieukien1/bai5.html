@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let baikt = parseInt(prompt("nhập điểm bài kiểm tra :"));
+let diemgiuaki = parseInt(prompt("nhập điểm giữa kì :"));
+let diemcuoiki = parseInt(prompt("nhập điểm cuối kì :"));
+let dtb = (baikt + diemgiuaki *1.0 + diemcuoiki *2.0)/3;
+if (dtb>=8.5){
+  document.write("học sinh giỏi")
+}else if ( dtb>=6.5 && dtb<8.5){
+  document.write("học sinh tiên tiến ")
+}else if (dtb>=5 && dtb <6.5){
+  document.write("học sinh trung bình")
+}else if (dtb >=3.5 && dtb <5){
+  document.write("học sinh yếu")
+}else {
+  document.write("học sinh kém")
+}
+</script>
+</body>
+</html>
