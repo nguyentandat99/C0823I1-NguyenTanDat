@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="game">
+    <h1>GAME ĐOÁN SỐ</h1>
+    <button type="button" class="" onclick="game()">chơi</button>
+</div>
+<script>
+    function game(){
+let khoan = parseInt(prompt("nhập khoảng từ 0 đến "));
+let num = parseInt(prompt("nhập số cần đoán "));
+let random = Math.floor(Math.random() * (num - khoan + 1) + khoan);
+console.log(random)
+    }
+</script>
+</body>
+</html>
