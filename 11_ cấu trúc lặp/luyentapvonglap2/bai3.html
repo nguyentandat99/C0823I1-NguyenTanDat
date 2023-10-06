@@ -6,44 +6,43 @@
 </head>
 <body>
 <script>
- // let n = parseInt(prompt("nhập :"))
- // for (let i = 1 ; i <=n ; i++){
- //     let row = ""
- //     for (let j =1 ; j <=i; j++){
- //         row += "* "
- //     }
- //     document.write(row +"<br>")
- // }
- // let m = parseInt(prompt("nhập :"))
- // for (let i = 1 ; i <=m ; i++){
- //     let row = ""
- //     for (let j =m ; j >=i; j--){
- //         row += "* "
- //     }
- //     document.write(row +"<br>")
- // }
-
- // let mno="";
- // for (let c=0;c<5;c++) {
- //     let def = "";
- //     for (let f = c + 1; f < 5; f++) {
- //         def += "&nbsp&nbsp";
- //     }
- //     document.write(def)
- //     mno += "*";
- //     document.write(mno + "<br>")
- // }
- let mno="";
- for (let c=0;c<5;c++) {
-     let def = "";
-     for (let f = c - 1; f > 5; f--) {
-         def += "&nbsp&nbsp";
-     }
-     document.write(def)
-         mno += "*";
-         document.write(mno + "<br>")
-
- }
+    // let n = parseInt(prompt("nhập :"))
+    // for (let i = 1 ; i <=n ; i++){
+    //     let row = ""
+    //     for (let j =1 ; j <=i; j++){
+    //         row += "* "
+    //     }
+    //     document.write(row +"<br>")
+    // }
+    // let m = parseInt(prompt("nhập :"));
+    // for (let i = 1 ; i <=m ; i++){
+    //     let row = ""
+    //     for (let j =m ; j >=i; j--){
+    //         row += "* "
+    //     }
+    //     document.write(row +"<br>")
+    // }
+    //
+    let mno = "";
+    for (let c = 0; c < 5; c++) {
+        let def = "";
+        for (let f = c + 1; f < 5; f++) {
+            def += "&nbsp&nbsp";
+        }
+        mno += "*";
+        document.write(def+mno)
+        document.write("<br>")
+    }
+    let mno1 = "";
+    for (let c = 0; c < 5; c++) {
+        let def = ""; //Xuống 1 hàng clear lại biến sao
+        for (let i = c; i < 5; i++) {
+            def += "* ";
+        }
+        mno1+= "&nbsp&nbsp&nbsp"; //xuống 1 hàng tăng đơn vị khoảng trống
+        document.write(mno1 + def); //Cộng khoảng trống và sao lại với nhau
+        document.write("<br>");
+    }
 
 </script>
 </body>
