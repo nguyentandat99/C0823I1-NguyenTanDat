@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let x = []
+  for (let i = 0 ; i <10;i++){
+    x[i]=parseInt(prompt("nhập mảng :"))
+  }document.writeln(x.sort((a,b)=>{
+    return b - a
+          }
+  ).join("-"))
+</script>
+</body>
+</html>

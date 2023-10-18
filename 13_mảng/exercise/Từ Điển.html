@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let eng = ["red","blue","yellow","white","black"];
+  let viet = ["màu đỏ","màu xanh"," màu vàng","màu trắng"," màu đen"];
+  let word = prompt("nhập từ bạn cần tìm :");
+  let result ;
+  for (let i = 0 ;  i <eng.length ; i++){
+      if (eng[i]===word){
+          result = viet[i]
+      }
+
+  }if (result !== undefined){
+      alert("nghĩa của nó là :"+result);
+  }else {
+      alert("không tìm thấy từ đó.")
+  }
+</script>
+</body>
+</html>

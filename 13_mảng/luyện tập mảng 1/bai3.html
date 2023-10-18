@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = []
+  let sum = 0
+  let n = prompt("nhap n :")
+  let max = 0;
+  for (let i = 0 ; i < n ; i++){
+    arr[i]=parseInt(prompt("nhập số nguyên :"))
+  }
+  for (let i = 0; i<arr.length;i++){
+    if(arr[i]>max){
+      max = arr[i]
+    }
+    sum +=arr[i]
+  }
+  alert("max: "+max)
+  alert("trung binh "+sum/arr.length)
+</script>
+</body>
+</html>
