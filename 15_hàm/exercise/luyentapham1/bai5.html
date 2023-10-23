@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    function star(starname) {
+        let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let arr2 = ["Ursa Minor", "Tarurus", "ygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        for (let i = 0; i <= arr1.length; i++) {
+            if (starname === arr1[i]) {
+                arr1[i] === arr2 [i];
+                return( arr2[i]);
+            }
+        }
+        return ("mảng không có tên sao ")
+    }
+
+    let star1 = prompt("nhập ngôi sao cần tìm :")
+    document.write(star(star1))
+</script>
 </body>
 </html>

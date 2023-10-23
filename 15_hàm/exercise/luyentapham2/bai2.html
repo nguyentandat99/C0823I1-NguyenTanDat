@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  function dientich(number){
+    return (number*number*Math.PI).toFixed(2)
+  }
+  function chuvi(number){
+return((number*2)*Math.PI).toFixed(2)
+  }
+  let number1 = prompt("nhập số:")
+  document.write("dien tich :"+dientich(number1))
+  document.write("chu vi :"+chuvi(number1))
+</script>
 </body>
 </html>
