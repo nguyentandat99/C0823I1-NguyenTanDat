@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let money = parseInt(prompt("nhập số tiền lương:"));
+    let thuethunhap;
+    let luongrong;
+    if (money > 15000000) {
+        thuethunhap = money * 0.2;
+    } else if (money > 7000000 && money < 15000000) {
+        thuethunhap = money * 0.1;
+    } else {
+        thuethunhap = money * 0.05;
+    }
+    luongrong = money - thuethunhap
+    document.write("lương : " + money +"VND"+ "<br>")
+    document.write("thuế thu nhập là : " + thuethunhap +"VND"+ "<br>")
+    document.write("số tiền bạn nhận được là : " + luongrong+"VND")
+</script>
 </body>
 </html>
