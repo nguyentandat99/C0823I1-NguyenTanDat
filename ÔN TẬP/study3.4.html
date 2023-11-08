@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2> menu gọi đồ uống </h2>
+<h3> các loại đồ uống dưới đây</h3>
+<p>1.Cafe</p>
+<p>2.Cam vắt</p>
+<p>3.Nước ép cà rốt</p>
+<p>4.Nước ép cà chua</p>
+<p>5.Nước lọc </p>
+<p>6.Nước dừa</p>
+<p>7.Thoát</p>
+<input type="button" value="order gọi món" onclick="order()">
+<script>
+function order () {
+    do {
+        let menu = parseInt(prompt("nhập số cần order đồ uống :"))
+    switch (menu) {
+        case 1 :
+            var price = parseInt(prompt("bạn đã order Cafe , mời bạn nhập số lượng :"))
+            alert("bạn đã order Cafe , hóa đơn của bạn là  " + price * 15000 + "VND");
+            break;
+        case 2 :
+            var price = parseInt(prompt("bạn đã order Cam vắt , mời bạn nhập số lượng :"))
+            alert("bạn đã order Cam vắt , hóa đơn của bạn là  " + price * 20000 + "VND");
+            break;
+        case 3 :
+            var price = parseInt(prompt("bạn đã order Nước ép cà rốt , mời bạn nhập số lượng :"))
+            alert("bạn đã order Nước ép cà rốt , hóa đơn của bạn là  " + price * 25000 + "VND");
+            break;
+        case 4 :
+            var price = parseInt(prompt("bạn đã order Nước ép cà chua "))
+            alert("bạn đã order Nước ép cà chua , hóa đơn của bạn là " + price * 25000 + "VND");
+            break;
+        case 5 :
+            var price = parseInt(prompt("bạn đã order Nước lọc ,mời bạn nhập số lượng :"))
+            alert("bạn đã order Nước lọc , hóa đơn của bạn là " + price * 10000 + "VND");
+            break;
+        case 6 :
+            var price = parseInt(prompt("bạn đã order Nước ép cà chua ,mời bạn nhập số lượng :"))
+            alert("bạn đã order Nước dừa , hóa đơn của bạn là 25000 vnd" + price * 20000 + "VND");
+            break;
+        case 7 :
+            return  false;
+            break;
+        default :
+            alert("số không hợp lệ , mời bạn order lại ");
+            break;
+
+    }
+}while (true)
+}
+
+</script>
+</body>
+</html>
